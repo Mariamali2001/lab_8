@@ -1,0 +1,113 @@
+[
+  {
+    "description": "    Manages presidents information.",
+    "elements": [
+      {
+        "description": "",
+        "id": "presidents;gets-the-list-of-presidents",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of presidents",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a character A",
+            "match": {
+              "location": "e2e\\steps\\presidents.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8355098.999999999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch presidents",
+            "match": {
+              "location": "e2e\\steps\\presidents.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1048166899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get 3 of presidents",
+            "match": {
+              "location": "e2e\\steps\\presidents.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2321400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "presidents;gets-the-list-of-presidents",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of presidents",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a character ",
+            "match": {
+              "location": "e2e\\steps\\presidents.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8812900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch presidents",
+            "match": {
+              "location": "e2e\\steps\\presidents.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1128782999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get 46 of presidents",
+            "match": {
+              "location": "e2e\\steps\\presidents.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3097200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "presidents",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Presidents",
+    "tags": [],
+    "uri": "e2e\\features\\presidents.feature"
+  }
+]

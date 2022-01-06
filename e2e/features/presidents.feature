@@ -10,4 +10,4 @@ Feature: Presidents
     Examples:
         | character | number |
         | A | 3 |
-        |  | 46 |
+        |   | 46 |

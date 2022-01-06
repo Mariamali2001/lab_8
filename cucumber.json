@@ -14,12 +14,9 @@
             "keyword": "Given ",
             "line": 5,
             "name": "a character A",
-            "match": {
-              "location": "e2e\\steps\\presidents.js:5"
-            },
             "result": {
-              "status": "passed",
-              "duration": 8355098.999999999
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -27,12 +24,9 @@
             "keyword": "When ",
             "line": 6,
             "name": "I send a GET request to fetch presidents",
-            "match": {
-              "location": "e2e\\steps\\presidents.js:9"
-            },
             "result": {
-              "status": "passed",
-              "duration": 1048166899
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -40,12 +34,9 @@
             "keyword": "Then ",
             "line": 7,
             "name": "I should get 3 of presidents",
-            "match": {
-              "location": "e2e\\steps\\presidents.js:15"
-            },
             "result": {
-              "status": "passed",
-              "duration": 2321400
+              "status": "undefined",
+              "duration": 0
             }
           }
         ],
@@ -64,12 +55,9 @@
             "keyword": "Given ",
             "line": 5,
             "name": "a character ",
-            "match": {
-              "location": "e2e\\steps\\presidents.js:5"
-            },
             "result": {
-              "status": "passed",
-              "duration": 8812900
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -77,12 +65,9 @@
             "keyword": "When ",
             "line": 6,
             "name": "I send a GET request to fetch presidents",
-            "match": {
-              "location": "e2e\\steps\\presidents.js:9"
-            },
             "result": {
-              "status": "passed",
-              "duration": 1128782999
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -90,12 +75,9 @@
             "keyword": "Then ",
             "line": 7,
             "name": "I should get 46 of presidents",
-            "match": {
-              "location": "e2e\\steps\\presidents.js:15"
-            },
             "result": {
-              "status": "passed",
-              "duration": 3097200
+              "status": "undefined",
+              "duration": 0
             }
           }
         ],

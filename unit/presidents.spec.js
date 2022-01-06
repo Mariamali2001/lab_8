@@ -1,14 +1,14 @@
 const mockPresidentsApiStub = require("./presedints.api.stub.json");
-const { getPresidents } = require("../scrap");
+const { getCompJobs } = require("../scrap");
 
 beforeEach(() => {
   jest.clearAllMocks();
   jest.resetAllMocks();
 });
 
-describe("Test Presidents API", () => {
-  test("Test Get Presidents", async () => {
-    const results = await getPresidents("A");
+describe("Test Locations API", () => {
+  test("Test Get Companies", async () => {
+    const results = await getCompJobs("6th of October, Giza, Egypt ");
     expect(results).toEqual(mockPresidentsApiStub);
   });
 });

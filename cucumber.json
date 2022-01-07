@@ -1,83 +1,52 @@
 [
   {
-    "description": "    Manages presidents information.",
+    "description": "    Manages companies information.",
     "elements": [
       {
         "description": "",
-        "id": "presidents;gets-the-list-of-presidents",
+        "id": "companies;gets-the-list-of-companies",
         "keyword": "Scenario Outline",
         "line": 4,
-        "name": "Gets the list of presidents",
+        "name": "Gets the list of companies",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "a character A",
+            "name": "a location \"6th of October, Giza, Egypt\"",
+            "match": {
+              "location": "e2e\\steps\\companies.js:5"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 10009500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "I send a GET request to fetch presidents",
+            "name": "I send a GET request to fetch companies",
+            "match": {
+              "location": "e2e\\steps\\companies.js:9"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 3655945000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I should get 3 of presidents",
+            "name": "I should get Raya   - of companies",
+            "match": {
+              "location": "e2e\\steps\\companies.js:15"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "presidents;gets-the-list-of-presidents",
-        "keyword": "Scenario Outline",
-        "line": 4,
-        "name": "Gets the list of presidents",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "a character ",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I send a GET request to fetch presidents",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "I should get 46 of presidents",
-            "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 2947399,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\u001b[32m+ actual\u001b[39m \u001b[31m- expected\u001b[39m\n\n\u001b[32m+\u001b[39m undefined\n\u001b[31m-\u001b[39m 'Raya   -'\n    at CustomWorld.<anonymous> (C:\\Users\\MSI\\Documents\\GitHub\\lab_8\\e2e\\steps\\companies.js:16:10)"
             }
           }
         ],
@@ -85,11 +54,11 @@
         "type": "scenario"
       }
     ],
-    "id": "presidents",
+    "id": "companies",
     "line": 1,
     "keyword": "Feature",
-    "name": "Presidents",
+    "name": "companies",
     "tags": [],
-    "uri": "e2e\\features\\presidents.feature"
+    "uri": "e2e\\features\\companies.feature"
   }
 ]

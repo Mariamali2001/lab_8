@@ -11,4 +11,12 @@ describe("Test Companies API", () => {
     const results = await getCompJobs("6th of October, Giza, Egypt ");
     expect(results).toEqual(mockCompaniesApiStub);
   });
+
+
+  test("Test data  aggregate ", async () => {
+    const results = await getCompJobs("6th of October, Giza, Egypt ");
+    expect(results).toEqual(mockCompaniesApiStub);
+  });
+
+
 });

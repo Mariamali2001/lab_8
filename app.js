@@ -23,4 +23,22 @@ app.listen(3000, async (req, res) => {
       return res.status(200).json(companies);
     });
   });
+
+
+app.get("/scrap", async (req, res) => {
+  //end point is scrap goes and get data when called getcompjobs and check if there is data output from method 
+  //database collection  wazzuf 
+  // if not return error message unable to establish  connetion 
+  const companies = await getCompJobs(req.query.char);
+  if (companies && companies.length) {
+    const db = await mongoClient('Wazzuf');
+    if (!db) {
+      return res.status(500).json({ message: 'Unable to establish database connection' });
+    }
+    await db.insertMany(companies).catch((err) => {
+      console.error(err);
+    });
+  }
+  return res.status(200).json(companies);
+})
 });

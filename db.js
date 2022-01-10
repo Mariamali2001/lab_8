@@ -24,7 +24,7 @@ const mongoClient = async collectionName => {
   if (!dbConnection) {
     await connect();
   }
-  //if there is connection will do a new collection with the name given to the method   
+  //if there is connection will do a new collection with the name given to the method  
   if (collectionName) {
     return dbConnection.collection(collectionName);
   }

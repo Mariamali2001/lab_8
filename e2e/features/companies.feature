@@ -4,9 +4,9 @@ Feature: companies
     Scenario Outline: Gets the list of companies
         Given a location <string>
         When I send a GET request to fetch companies
-        Then I should get <{}> of companies
+        Then I should get <number> of companies
 
 
     Examples:
-        | location                     | {}                                          |
-        | New Cairo, Cairo, Egypt      | AIC - Al Maalim International Co. -         |
+        | string                         | number |
+        | '6th of October, Giza, Egypt ' | 3      |

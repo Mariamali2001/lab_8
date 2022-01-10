@@ -1,7 +1,7 @@
 const mockCompaniesApiStub = require("./companies.api.stub.json");
 const { getCompJobs} = require("../scrap");
 const {getJobType }=require("../scrap2")
-const mockJobsApiStub = require("./jobs.api.stub.json");
+const mockJobsApiStub = require("./jobsType.api.stub.json");
 
 beforeEach(() => {
   jest.clearAllMocks();

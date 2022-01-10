@@ -9,4 +9,4 @@ Feature: jobsType
 
     Examples:
         | {string}                                   | number              |
-        | "Intern"                                   | 14                  |
+        | "Intern"                                   | 13                  |

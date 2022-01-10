@@ -1,6 +1,6 @@
 [
   {
-    "description": "     Manages companies information.",
+    "description": "    Manages companies information.",
     "elements": [
       {
         "description": "",
@@ -13,27 +13,26 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "a location \"6th of October, Giza, Egypt\"",
+            "name": "a location '6th of October, Giza, Egypt '",
             "match": {
               "location": "e2e\\steps\\companies.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 14200800
+              "duration": 18325899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "I send a GET request to /companies",
+            "name": "I send a GET request to fetch companies",
             "match": {
-              "location": "e2e\\steps\\companies.js:9"
+              "location": "e2e\\steps\\companies.js:10"
             },
             "result": {
-              "status": "failed",
-              "duration": 1236500,
-              "error_message": "function has 0 arguments, should have 1 (if synchronous or returning a promise) or 2 (if accepting a callback)"
+              "status": "passed",
+              "duration": 1808010700
             }
           },
           {
@@ -42,11 +41,11 @@
             "line": 7,
             "name": "I should get 3 of companies",
             "match": {
-              "location": "e2e\\steps\\companies.js:15"
+              "location": "e2e\\steps\\companies.js:19"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2254299
             }
           }
         ],
@@ -60,5 +59,66 @@
     "name": "companies",
     "tags": [],
     "uri": "e2e\\features\\companies.feature"
+  },
+  {
+    "description": "     Mange job that have internship in names ",
+    "elements": [
+      {
+        "description": "",
+        "id": "jobstype;gets-the-list-of-jobstype",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of jobsType",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a string \"Intern\"",
+            "match": {
+              "location": "e2e\\steps\\jobsType.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18399899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch jobsType",
+            "match": {
+              "location": "e2e\\steps\\jobsType.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1715204399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get 13 of jobsType",
+            "match": {
+              "location": "e2e\\steps\\jobsType.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2392300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "jobstype",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "jobsType",
+    "tags": [],
+    "uri": "e2e\\features\\jobsType.feature"
   }
 ]

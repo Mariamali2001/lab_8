@@ -13,13 +13,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "a string \"6th of October, Giza, Egypt\"",
+            "name": "a location '6th of October, Giza, Egypt '",
             "match": {
               "location": "e2e\\steps\\companies.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 16719099
+              "duration": 9457399
             }
           },
           {
@@ -32,17 +32,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1819958899
+              "duration": 1499015799
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I should get <{number}> of companies",
+            "name": "I should get 3 of companies",
+            "match": {
+              "location": "e2e\\steps\\companies.js:19"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1401399
             }
           }
         ],
@@ -56,5 +59,66 @@
     "name": "companies",
     "tags": [],
     "uri": "e2e\\features\\companies.feature"
+  },
+  {
+    "description": "     Mange job that have internship in names ",
+    "elements": [
+      {
+        "description": "",
+        "id": "jobs;gets-the-list-of-jobs",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of jobs",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a string \"Intern\"",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9217000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch jobs",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1374635100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get 14 of jobs",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1804399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "jobs",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "jobs",
+    "tags": [],
+    "uri": "e2e\\features\\jobs.feature"
   }
 ]

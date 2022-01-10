@@ -3,6 +3,7 @@ const app = express();
 
 const bodyParser = require("body-parser");
 const {getCompJobs } = require("./scrap");
+const {getJobType } = require("./scrap2");
 app.use(bodyParser.json());
 
 app.use(function (req, res, next) {
@@ -21,6 +22,12 @@ app.listen(3000, async (req, res) => {
   app.get("/companies", async (req, res) => {
     getCompJobs(req.query.string).then((companies) => {
       return res.status(200).json(companies);
+    });
+  });
+
+  app.get("/jobs", async (req, res) => {
+    getJobType(req.query.string).then((jobType) => {
+      return res.status(200).json(jobType);
     });
   });
 

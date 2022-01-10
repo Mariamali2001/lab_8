@@ -27,21 +27,21 @@ const getCompJobs = (locationName) => {
       for (let i = 0 ; i < parsedcompanies.length ; i++){
         items.push([parsedcompanies[i],parsedlocations[i]]);
       }
-      //console.log(items);
+      
 
       if(locationName){
         let searchRes = []
         for (let i = 0 ; i < items.length ; i++){
-          if(items[i][1] == locationName){
+          if(items[i][1].includes(locationName)){
             searchRes.push(items[i][0]);
           }
         }
-        console.log(searchRes);
         return searchRes;
       }
-      return parsedCompanies;
+      return parsedcompanies;
 
     })
     .catch(console.error);
+    
 };
 module.exports = { getCompJobs };

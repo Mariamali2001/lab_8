@@ -13,10 +13,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "a location <string>",
+            "name": "a location \"6th of October, Giza, Egypt\"",
+            "match": {
+              "location": "e2e\\steps\\companies.js:5"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 15342300
             }
           },
           {
@@ -28,21 +31,22 @@
               "location": "e2e\\steps\\companies.js:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1697504700
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I should get AIC - Al Maalim International Co. - of companies",
+            "name": "I should get Raya   - of companies",
             "match": {
               "location": "e2e\\steps\\companies.js:15"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 3474900,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\u001b[32m+ actual\u001b[39m \u001b[31m- expected\u001b[39m\n\n\u001b[32m+\u001b[39m undefined\n\u001b[31m-\u001b[39m 'Raya   -'\n    at CustomWorld.<anonymous> (F:\\Semester 5\\Software Construction and testing\\test\\lab_8\\e2e\\steps\\companies.js:16:10)"
             }
           }
         ],

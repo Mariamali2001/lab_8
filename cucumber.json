@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9457399
+              "duration": 15356099
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1499015799
+              "duration": 1627749200
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1401399
+              "duration": 1863600
             }
           }
         ],
@@ -65,10 +65,10 @@
     "elements": [
       {
         "description": "",
-        "id": "jobs;gets-the-list-of-jobs",
+        "id": "jobstype;gets-the-list-of-jobstype",
         "keyword": "Scenario Outline",
         "line": 4,
-        "name": "Gets the list of jobs",
+        "name": "Gets the list of jobsType",
         "steps": [
           {
             "arguments": [],
@@ -76,37 +76,37 @@
             "line": 5,
             "name": "a string \"Intern\"",
             "match": {
-              "location": "e2e\\steps\\jobs.js:5"
+              "location": "e2e\\steps\\jobsType.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 9217000
+              "duration": 16692000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "I send a GET request to fetch jobs",
+            "name": "I send a GET request to fetch jobsType",
             "match": {
-              "location": "e2e\\steps\\jobs.js:10"
+              "location": "e2e\\steps\\jobsType.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1374635100
+              "duration": 1690819600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I should get 14 of jobs",
+            "name": "I should get 14 of jobsType",
             "match": {
-              "location": "e2e\\steps\\jobs.js:18"
+              "location": "e2e\\steps\\jobsType.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 1804399
+              "duration": 2218800
             }
           }
         ],
@@ -114,11 +114,11 @@
         "type": "scenario"
       }
     ],
-    "id": "jobs",
+    "id": "jobstype",
     "line": 1,
     "keyword": "Feature",
-    "name": "jobs",
+    "name": "jobsType",
     "tags": [],
-    "uri": "e2e\\features\\jobs.feature"
+    "uri": "e2e\\features\\jobsType.feature"
   }
 ]

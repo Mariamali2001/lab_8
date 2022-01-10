@@ -7,14 +7,14 @@ Given("a string {string}", function (jobType) {
     console.log(jobType)
   });
   
-  When("I send a GET request to fetch jobs",  {timeout: 10 * 5000}, async function () {
+  When("I send a GET request to fetch jobsType",  {timeout: 10 * 5000}, async function () {
     const {data} = await axios
-      .get(`http://localhost:3000/jobs?string=${this.context["jobType"]}`)
+      .get(`http://localhost:3000/jobsType?string=${this.context["jobType"]}`)
       this.context["response"] = data
       console.log(data)
   
   });
   
-  Then("I should get {int} of jobs", function (expectedResponse) {
+  Then("I should get {int} of jobsType", function (expectedResponse) {
     assert.deepEqual(this.context["response"].length, expectedResponse);
   });

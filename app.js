@@ -25,7 +25,7 @@ app.listen(3000, async (req, res) => {
     });
   });
 
-  app.get("/jobs", async (req, res) => {
+  app.get("/jobsType", async (req, res) => {
     getJobType(req.query.string).then((jobType) => {
       return res.status(200).json(jobType);
     });
